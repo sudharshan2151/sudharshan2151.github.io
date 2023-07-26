@@ -46,11 +46,11 @@
                   <div>
                     <div>
                       <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#work">Project</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                        <li><a href="#about" onclick="closeMenu()">About</a></li>
+                        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                        <li><a href="#work" onclick="closeMenu()">Project</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
                       </ul>
                     </div>
                   </div>
@@ -59,12 +59,13 @@
             
         </nav>
     </header>
-    <main class="l-main">
+
+    <main class="l-main animate-left " onload="animateWords()">
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h2 class="home__title">Hi,
-                <h2 class="home__title ml15">I'm <span class="home__title-color" >Sudharshan S</span><br> <span class="word">Java Backend Developer </span></h2>
+                <h2 class="home__title ml15">I'm <span class="home__title-color" >Sudharshan S</span><br> <span class="word animate-charcter">Java Backend Developer </span></h2>
                 </h2>
                 <a href="./resources/assets/Sudharshan-S-Resume (1).pdf" class="button">Resume</a>
             </div>
@@ -89,7 +90,7 @@
             </div>
             
             <div>
-                <h2 class="about__subtitle" >Sudharshan S</h2>
+                <h2 class="section" >Sudharshan S</h2>
                
                     <p class="about__text">Highly skilled Java developer with a passion for crafting robust and efficient applications. Eager to contribute my expertise in dynamic tech-based companies. Committed to continuous learning and building innovative software solutions.</p>  
                 
@@ -97,15 +98,96 @@
         </div>
     </section>
 
-    <section class="skills section" id="skills">
+    <section class="skills section " id="skills">
         <h2 class="section-title">Skills && Interests</h2>
+        <!-- <div class="wrapper">
+          <div class="gallery">
+            <ul>
+              <li><img src=""></li>
+              <li><img src=""></li>
+              <li><img src=""></li>
+              <li><img src=""></li>
+              <li><img src=""></li>
+              <li><img src=""></li>
+              <li><img src=""></li>
+              <li><img src=""></li>
+            </ul>
+          </div> -->
 
-       <div>
-        <img src="" alt="">
-       </div>
+            <div class="gallery">
+          
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th?q=Picture+for+HTML&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="html">
+              </div>
+          
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th/id/OIP.9GLqOe56aIqcRvqi0jCQegHaE8?w=246&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="sunset behind San Francisco city skyline">
+              </div>
+          
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th/id/OIP.Yz3TDN7_Mk1SDRHXUDJmVwHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+              </div>
+          
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th/id/OIP.25vSXGJsvi1u3JIjcfvfNQHaEo?w=249&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+              </div>
+          
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th/id/OIP.wmVr1W0nuF_M_OswcpjyjgHaEc?w=293&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+              </div>
+          
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th/id/OIP.a0fX_sFdPhpd4IasHICPbQHaEX?w=250&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+              </div>
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th/id/OIP.YCdY8pRfjdOIUcBvccLpCgHaHa?pid=ImgDet&w=168&h=168&c=7&dpr=1.3" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+              </div>
+              <div class="gallery-item">
+                <img class="gallery-image" src="https://th.bing.com/th/id/OIP.N3G94WPEgyMzg7ys0OM1GwHaDN?w=280&h=151&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+              </div>
+          
+            </div>
+          
+  
+       
     </section>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="./resources/js/index.js"></script>
 </html>
+
+
+<!-- <div class="container">
+
+	<h1 class="heading">Image Gallery with CSS Grid <span>& Flexbox Fallback</span></h1>
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+	</div>
+
+</div> -->

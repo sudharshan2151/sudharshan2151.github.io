@@ -255,6 +255,7 @@ section .title::after {
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
+  padding: 30px;
 }
 #about .about-content .right {
   width: 55%;

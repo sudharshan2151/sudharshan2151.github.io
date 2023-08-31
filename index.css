@@ -100,14 +100,16 @@ section .title::after {
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
-  
+  background-color: #10c1b2;
 }
 
 #nav-menu .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
+
 #nav-menu .logo a {
   color: #fff;
   font-size: 35px;
@@ -133,10 +135,11 @@ section .title::after {
   transition: color 0.3s ease;
 }
 #nav-menu .menu li a:hover {
-  color: #10c1b2;
+  color: #010c0c;
 }
 #nav-menu.sticky .menu li a:hover {
   color: #fff;
+ 
 }
 
 #resume-button-1 {
@@ -162,12 +165,13 @@ section .title::after {
   font-size: 23px;
   cursor: pointer;
   display: none;
+  
 }
 .scroll-up-btn {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #10c1b2;
+  background-color: #10c1b2;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -181,6 +185,7 @@ section .title::after {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  
 }
 .scroll-up-btn.show {
   bottom: 30px;
@@ -194,7 +199,7 @@ section .title::after {
 /* home section styling */
 #home {
   display: flex;
-  background: url("https://wallpapercave.com/wp/wp2757874.gif") no-repeat center;
+  /* background: url("https://www.gifcen.com/wp-content/uploads/2022/07/discord-banner-gif-8.gif") no-repeat center; */
   background-color: #111;
   height: 100vh;
   color: #fff;
@@ -251,11 +256,12 @@ section .title::after {
   width: 45%;
 }
 #about .about-content .left img {
-  height: 400px;
-  width: 400px;
+ 
+ 
   object-fit: cover;
   border-radius: 6px;
-  padding: 30px;
+  padding: 50px;
+  width: 80%;
 }
 #about .about-content .right {
   width: 55%;
@@ -780,3 +786,63 @@ footer span a:hover {
     line-height: 38px;
   }
 }
+
+
+footer{
+  background-color: #211e39;
+}
+
+footer .link-group a{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+footer .link-group a:hover{
+  color: #10c1b2;
+}
+.social-links button{
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 14px 15px 10px 15px;
+}
+.social-links .dribble{
+  color: #f33a7e;
+}
+.social-links button:hover{
+  color: #fff;
+  transform: translateY(-20px);
+  transition-duration: 1s;
+}
+.social-links .dribble:hover{
+  background-color: #f33a7e;
+}
+.social-links .whatsapp{
+  color: #25D366;
+}
+.social-links .whatsapp:hover{
+  background-color: #25D366;
+}
+.social-links .behance{
+  color: #255afc;
+}
+.social-links .behance:hover{
+  background-color: #255afc;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 1.4rem;
+  background-color: #10c1b2;
+  color: #fff;
+  animation: pulse 3s infinite;
+}
+

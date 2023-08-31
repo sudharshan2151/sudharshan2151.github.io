@@ -38,7 +38,6 @@ $(document).ready(function () {
     strings: [
       "Java Back-End Developer",
       "Full-Stack Developer",
-      "Front-End Developer"
     ],
     typeSpeed: 100,
     backSpeed: 60,

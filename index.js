@@ -74,3 +74,12 @@ $(document).ready(function () {
     },
   });
 });
+
+let c = document.getElementById("resume-button-1");
+c.addEventListener("click",()=>{
+  window.location.href="https://drive.google.com/file/d/1DaC2SZrqlzl_6UU7_-PmJZOHt50kewNv/view?usp=drive_link"
+})
+let c1 = document.getElementById("resume-button-2");
+c1.addEventListener("click",()=>{
+  window.location.href="https://drive.google.com/file/d/1DaC2SZrqlzl_6UU7_-PmJZOHt50kewNv/view?usp=drive_link"
+})

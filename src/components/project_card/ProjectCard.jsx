@@ -1,6 +1,6 @@
 import styles from "./ProjectCard.module.css";
 import { FaGithub } from "react-icons/fa";
-//import { BiLinkExternal } from "react-icons/bi";
+import { BiLinkExternal } from "react-icons/bi";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -16,9 +16,9 @@ const ProjectCard = ({
     window.open(git);
   };
 
-  // let handleLiveDemo = () => {
-  //   window.open(demo);
-  // };
+  let handleLiveDemo = () => {
+    window.open(demo);
+  };
 
   return (
     <div className={styles.card}>
@@ -53,14 +53,12 @@ const ProjectCard = ({
           </span>
           Code
         </button>
-        {/* <---live buttom --->  want to make it enable it*/}
-
-        {/* <button className={styles.demo_button} onClick={handleLiveDemo}>
+        <button className={styles.demo_button} onClick={handleLiveDemo}>
           <span className={styles.card_button_icon}>
             <BiLinkExternal size='1.1em' />
           </span>
           Live
-        </button> */}
+        </button>
       </div>
     </div>
   );

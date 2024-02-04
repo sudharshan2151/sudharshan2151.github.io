@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import resumeImage from "../../assets/Sudharshan S-Resume_page-0001.jpg";
 
 const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
   return (
@@ -49,6 +50,22 @@ const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
         }}
       >
         Contact
+      </div>
+      <div
+        className={styles.nav_links}
+        
+        onClick={() => {
+          setVerticalOpen(false);
+          handleSectionScroll("resume");
+          window.open("https://drive.google.com/file/d/1DaC2SZrqlzl_6UU7_-PmJZOHt50kewNv/view");
+          const resumePath = resumeImage;
+          const downloadLink = document.createElement("a");
+          downloadLink.href = resumePath;
+          downloadLink.download = "Sudharshan S-Resume_page-0001.jpg";
+          downloadLink.click();
+        }}
+      >
+        Resume
       </div>
     </>
   );
@@ -99,7 +116,7 @@ const Navbar = ({ handleSectionScroll }) => {
       <div
         className={styles.drop_down_container}
         style={{
-          height: verticalOpen ? "350px" : "0px",
+          height: verticalOpen ? "450px" : "0px",
         }}
       >
         <NavLinks

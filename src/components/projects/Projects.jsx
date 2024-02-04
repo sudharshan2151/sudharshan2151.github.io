@@ -35,7 +35,7 @@ const Projects = () => {
       ],
       links: [
         "https://github.com/sudharshan2151/MindMesh/",
-        // "https://refresh.masai.tech/login",
+        "https://drive.google.com/file/d/1eQrW9SKqFmJfipo4uRSeW-CZNDLuouTV/view",
       ],
     },
     {
@@ -52,7 +52,7 @@ const Projects = () => {
       ],
       links: [
         "https://github.com/sudharshan2151/Book-My-Bus",
-        // "https://practo.netlify.app/",
+        "https://ankits-book-my-bus.netlify.app/",
       ],
     },
     {
@@ -66,7 +66,7 @@ const Projects = () => {
       tech_stack: ["Java", "MySQL", "Hibernate"],
       links: [
         "https://github.com/sudharshan2151/Libra_Nexus",
-        
+        "https://drive.google.com/file/d/1MBcpgwgEmhQsywGeoMSVpUOL-TATa04l/view?usp=sharing",
       ],
     },
     // {

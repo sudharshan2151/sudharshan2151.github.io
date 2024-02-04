@@ -59,5 +59,9 @@
     .aligner > div {
       margin: 10px 5px;
     }
+    img{
+      width: 70%;
+      margin: auto;
+    }
   }
   

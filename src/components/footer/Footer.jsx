@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.cp}>
-        &#169; 2023 Designed and Built by Sudharshan S with ❤️
+        &#169; 2024 Designed and Built by Sudharshan S with ❤️
       </div>
     </div>
   );

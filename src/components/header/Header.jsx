@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import user from "../../assets/pp (1).JPG";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ScrollAnimation from "react-animate-on-scroll";
-import resume from "../../assets/Sudharshan S-Resume_page-0001.jpg"
+import resume from "../../assets/Saravana.png"
 
 const Header = () => {
   const handleGithub = () => {

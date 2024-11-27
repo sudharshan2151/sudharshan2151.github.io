@@ -28,7 +28,7 @@ const ProjectCard = ({
           <div className={styles.card_badge_top}>{badge}</div>
         </>
       ) : null}
-      <div className={styles.title}>{title}</div>
+      <div className={`${styles.title} project-title`}>{title}</div>
       <div className={styles.image}>
         <Carousel
           autoPlay
@@ -42,18 +42,18 @@ const ProjectCard = ({
           })}
         </Carousel>
       </div>
-      <div className={styles.about}>
+      <div className={`${styles.about} project-description`}>
         <div>{about}</div>
       </div>
-      <div className={styles.stack}>Tech Stack : {tech_stack}</div>
+      <div className={`${styles.stack} project-tech-stack`}>Tech Stack : {tech_stack}</div>
       <div className={styles.link}>
-        <button className={styles.git_button} onClick={handleGit}>
-          <span className={styles.card_button_icon}>
+        <button className={`${styles.git_button} project-github-link`} onClick={handleGit}>
+          <span className={`${styles.card_button_icon}`}>
             <FaGithub size='1.1em' />
           </span>
           Code
         </button>
-        <button className={styles.demo_button} onClick={handleLiveDemo}>
+        <button className={`${styles.demo_button} project-deployed-link`} onClick={handleLiveDemo}>
           <span className={styles.card_button_icon}>
             <BiLinkExternal size='1.1em' />
           </span>

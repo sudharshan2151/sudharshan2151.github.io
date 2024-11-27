@@ -17,10 +17,6 @@ const Experience = () => {
     iconStyle: {
       background: "#51989d",
       color: "#fff",
-      // width: "30px",
-      // height: "30px",
-      // borderRadius: "50%",
-      // margin: "1.4% 0 0 -1.5%",
     },
   };
 
@@ -31,28 +27,31 @@ const Experience = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             contentStyle={style.contentStyle}
-            date='April, 2021 - present'
+            date='March, 2024 - Present'
             iconStyle={style.iconStyle}
             icon={<CgWorkAlt />}
           >
-            <h3>Instructional Associate | Developer</h3>
-            <h4>Masai School, Bangalore</h4>
+            <h3>Full Stack Web Developer</h3>
+            <h4>Piquota Digital Solutions,Coimbatore</h4>
             <p className={styles.content_p}>
               Roles and Responsibilities,
               <br />
-              - Building and maintaining internal applications
+              - Contributed to Full Stack Java development projects using technologies
+              such as HTML,CSS,Javascript,React.js,MySQL,
+              Hibernate,Spring Boot and the Play Framework.
               <br />
-              - Clearing students conceptual doubts via standups and pair
-              programming, reviewing students projects.
+              - Collaborated with team members to design and implement efficient  and
+              scalable solutions, deploying the code using Linux VM ,ensuring code quality and reliability through rigorous
+              testing.
               <br />
-              - Reporting to the instructor and delivering lectures whenever
-              required.
+              - Participatedin architectural discussions to enhance system performance
+              andmaintainability, writing clean and maintainable code.
               <br />
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             contentStyle={style.contentStyle}
-            date='October, 2020 - April, 2021'
+            date='January 2023-Feb-2024'
             iconStyle={style.iconStyle}
             icon={<FaBookReader />}
           >
@@ -61,7 +60,7 @@ const Experience = () => {
             <p className={styles.content_p}>
               Worked extensively on,
               <br />
-              - MERN Stack
+              - Full Stack Web Development (Java)
               <br />
               - Data Structure and Algorithms
               <br />

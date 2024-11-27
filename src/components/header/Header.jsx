@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import user from "../../assets/pp (1).JPG";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import ScrollAnimation from "react-animate-on-scroll";
+import {Fade,Slide,Zoom} from 'react-awesome-reveal';
 import resumeImage from "../../assets/Sudharshan S-Resume_page-0001.jpg";
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   const handleResume = (e) => {
-    // Open the Google Drive link
+
     window.open("https://drive.google.com/file/d/1DaC2SZrqlzl_6UU7_-PmJZOHt50kewNv/view");
   
       const resumePath = resumeImage;
@@ -27,29 +27,32 @@ const Header = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} nav-link home`} id="home">
       <div className={styles.content_container}>
         <div className={styles.bg}></div>
         <div className={styles.content}>
-          <div className={styles.title}>
+          <div className={styles.title} id="user-detail-name">
             Hi, I am <br />
-            <ScrollAnimation duration={2} animateOnce={true} animateIn='flipInY'>
-              Sudharshan S
-            </ScrollAnimation>
+            <Fade triggerOnce={true} delay={1e3} cascade damping={1e-1} >Sudharshan S</Fade>
           </div>
-          <div className={styles.description}>Programmer | Java Backend Developer</div>
+          <div className={styles.description} id="user-detail-intro">
+              <Slide triggerOnce={true} duration={2000}> 
+                <Zoom triggerOnce={true} duration={1000}>Programmer | Java Full Stack Developer
+                </Zoom>
+              </Slide>
+          </div>
           <div>
-            <button onClick={handleResume}>Resume</button>
+            <button onClick={handleResume} id="resume-button-2">Resume</button>
           </div>
           <div className={styles.connect}>
-            <FaGithub onClick={handleGithub} size='1.5em' />
-            <FaLinkedin onClick={handleLinkedin} size='1.5em' />
+            <FaGithub id="contact-github" onClick={handleGithub} size='1.5em' />
+            <FaLinkedin id="contact-linkedin" onClick={handleLinkedin} size='1.5em' />
           </div>
         </div>
       </div>
       <div className={styles.image_container}>
-        <div className={styles.image}>
-          <img src={user} alt='User Pic' />
+        <div className={`${styles.image} home-img`}>
+          <img className="home-img" src={user} alt='User Pic' />
         </div>
       </div>
     </div>

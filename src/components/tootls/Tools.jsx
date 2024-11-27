@@ -4,6 +4,7 @@ import sts from "../../assets/sts.png";
 import postman from "../../assets/postman.jpg";
 import git from "../../assets/git.jpg";
 import vsCode from "../../assets/vs.code.jpg";
+import intellij from "../../assets/intellij.jpg"
 
 
 const Tools = () => {
@@ -19,6 +20,10 @@ const Tools = () => {
     {
       title: "GIT",
       image: git,
+    },
+    {
+      title:"Intellij",
+      image:intellij
     },
     {
       title: "VS Code",

@@ -19,7 +19,7 @@ const About = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} about section`} id="about" >
       <div>
         <div className={styles.heading}>About</div>
         <div className={styles.content}>{about}</div>

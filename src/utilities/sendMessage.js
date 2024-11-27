@@ -1,15 +1,16 @@
 import emailjs from "emailjs-com";
 
-const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } =
-  process.env;
+const SERVICE_ID = "service_9uszkld";
+const TEMPLATE_ID = "template_cxiaxgc";
+const USER_ID = "Vw13NEgzQkcxli8Vk";
 
 function sendMessage(data) {
   return emailjs.sendForm(
-    REACT_APP_SERVICE_ID,
-    REACT_APP_TEMPLATE_ID,
+    SERVICE_ID,         
+    TEMPLATE_ID,
     data,
-    REACT_APP_USER_ID
-  );
+    USER_ID         
+  )
 }
 
 export { sendMessage };

@@ -10,6 +10,9 @@ import hibernate from "../../assets/hibernate.png";
 import github from "../../assets/github-icon.svg";
 import dsa from "../../assets/ds-removebg-preview.png";
 import mysql from "../../assets/mysql.svg";
+import react from "../../assets/React-icon.png";
+import tailwind from "../../assets/tailwind.png";
+
 
 const Skills = () => {
   let data = [
@@ -26,6 +29,14 @@ const Skills = () => {
       image: javascript,
     },
     {
+      title:"React",
+      image:react
+    },
+    {
+      title:"Tailwind",
+      image:tailwind
+    },
+    {
       title: "Java",
       image: java,
     },
@@ -33,6 +44,7 @@ const Skills = () => {
       title: "Spring",
       image: spring,
     },
+    
     {
       title: "Hibernate",
       image: hibernate,
@@ -56,14 +68,14 @@ const Skills = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} nav-link s`} id="skills">
       <div className={styles.heading}>Skills & Interests</div>
       <div className={styles.aligner}>
         {data.map((item, i) => {
           return (
             <div key={i} className={styles.listItem}>
-              <img src={item.image} alt={item.title} />
-              <div className={styles.title}>{item.title}</div>
+              <img src={item.image} className="skills-card-img" alt={item.title} />
+              <div className={`{styles.title} skills-card-name`}>{item.title}</div>
             </div>
           );
         })}

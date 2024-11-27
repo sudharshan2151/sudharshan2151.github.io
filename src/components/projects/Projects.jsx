@@ -79,11 +79,10 @@ const Projects = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} nav-link projects`} id="projects">
       <div className={styles.heading}>Projects</div>
       <div className={styles.aligner}>
         {data?.map((item, i) => {
-          console.log(i,item);
           return <ProjectCard key={i} item={item} />;
         })}
       </div>

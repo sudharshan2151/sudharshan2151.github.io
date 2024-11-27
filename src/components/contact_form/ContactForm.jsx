@@ -9,7 +9,7 @@ const ContactForm = () => {
   let [isSending, setIsSending] = React.useState(false);
   let [sentStatus, setSentStatus] = React.useState(null);
   let timeoutRef = React.useRef(null);
-
+  let form = React.useRef();
   const details = {
     mail: "s.sudharshan2151@gmail.com",
     mobile: "+91 9384905182",
@@ -30,7 +30,7 @@ const ContactForm = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
-    sendMessage(e.target)
+    sendMessage(form.current)
       .then(
         (res) => {
           e.target.reset();
@@ -67,7 +67,7 @@ const ContactForm = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contact">
       <div className={styles.left}>
         <div className={styles.left_header}>
           <div className={styles.left_header_l1}>Have an idea?</div>
@@ -77,22 +77,23 @@ const ContactForm = () => {
           <div
             className={`${styles.icon_text} ${styles.mail}`}
             onClick={handleMail}
+            id="contact-email"
           >
             <GrMail size='1.6em' />
             <span>{mail}</span>
           </div>
-          <div className={styles.icon_text}>
+          <div className={styles.icon_text}  id="contact-phone">
             <ImPhone size='1.6em' />
             <span>{mobile}</span>
           </div>
           <div className={styles.connect}>
-            <FaGithub onClick={handleGithub} size='1.8em' />
-            <FaLinkedin onClick={handleLinkedin} size='1.8em' />
-          </div>
+            <FaGithub id="contact-github" onClick={handleGithub} size='1.8em' />
+            <FaLinkedin  id="contact-linkedin" onClick={handleLinkedin} size='1.8em' />
+          </div> 
         </div>
       </div>
       <div className={styles.right}>
-        <form className={styles.form_container} onSubmit={handleFormSubmit}>
+        <form className={styles.form_container} ref={form} onSubmit={handleFormSubmit}>
           <div className={styles.form_elements}>
             <div>Email</div>
             <input type='email' name='email' required={true} />

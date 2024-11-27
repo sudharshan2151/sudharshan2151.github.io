@@ -7,7 +7,16 @@ const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
   return (
     <>
       <div
-        className={styles.nav_links}
+        className={`${styles.nav_links} nav-link home`}
+        onClick={() => {
+          setVerticalOpen(false);
+          handleSectionScroll("home");
+        }}
+      >
+        Home
+      </div>
+      <div
+        className={`${styles.nav_links} nav-link about`}
         onClick={() => {
           setVerticalOpen(false);
           handleSectionScroll("about");
@@ -15,17 +24,18 @@ const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
       >
         About
       </div>
-      <div
-        className={styles.nav_links}
-        onClick={() => {
-          setVerticalOpen(false);
-          handleSectionScroll("skills");
-        }}
-      >
-        Skills
+      
+        <div
+         className={`${styles.nav_links} nav-link skills`}
+          onClick={() => {
+            setVerticalOpen(false);
+            handleSectionScroll("skills");
+          }}
+        >
+          Skills
       </div>
       <div
-        className={styles.nav_links}
+       className={`${styles.nav_links} `}
         onClick={() => {
           setVerticalOpen(false);
           handleSectionScroll("tools");
@@ -34,7 +44,7 @@ const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
         Tools
       </div>
       <div
-        className={styles.nav_links}
+       className={`${styles.nav_links} nav-link projects`}
         onClick={() => {
           setVerticalOpen(false);
           handleSectionScroll("projects");
@@ -43,7 +53,7 @@ const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
         Projects
       </div>
       <div
-        className={styles.nav_links}
+       className={`${styles.nav_links} nav-link contact`}
         onClick={() => {
           setVerticalOpen(false);
           handleSectionScroll("contact");
@@ -52,11 +62,10 @@ const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
         Contact
       </div>
       <div
-        className={styles.nav_links}
-        
+       className={`${styles.nav_links} nav-link resume`}
+        id="resume-button-1"
         onClick={() => {
           setVerticalOpen(false);
-          handleSectionScroll("resume");
           window.open("https://drive.google.com/file/d/1DaC2SZrqlzl_6UU7_-PmJZOHt50kewNv/view");
           const resumePath = resumeImage;
           const downloadLink = document.createElement("a");
@@ -82,7 +91,7 @@ const Navbar = ({ handleSectionScroll }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="nav-menu">
       <div className={styles.nav_container}>
         <div
           className={styles.logo}

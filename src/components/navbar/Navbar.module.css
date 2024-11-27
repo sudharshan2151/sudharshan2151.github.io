@@ -64,7 +64,7 @@
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 654px) {
   .horizontal_nav {
     display: none;
   }

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.03a5c6e7.chunk.css",
-    "main.js": "/static/js/main.3b4e3fcd.chunk.js",
-    "main.js.map": "/static/js/main.3b4e3fcd.chunk.js.map",
+    "main.js": "/static/js/main.a2f7f09d.chunk.js",
+    "main.js.map": "/static/js/main.a2f7f09d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ba6daf4.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ba6daf4.js.map",
     "static/css/2.9feaab34.chunk.css": "/static/css/2.9feaab34.chunk.css",
@@ -19,7 +19,7 @@
     "static/media/MindMesh3.8a5f1a87.jpg": "/static/media/MindMesh3.8a5f1a87.jpg",
     "static/media/MindMesh4.793d30b4.jpg": "/static/media/MindMesh4.793d30b4.jpg",
     "static/media/React-icon.53a12807.png": "/static/media/React-icon.53a12807.png",
-    "static/media/Sudharshan S-Resume_page-0001.29972b70.jpg": "/static/media/Sudharshan S-Resume_page-0001.29972b70.jpg",
+    "static/media/Sudharshan_S_CV.59e59990.pdf": "/static/media/Sudharshan_S_CV.59e59990.pdf",
     "static/media/bd.71d04cad.png": "/static/media/bd.71d04cad.png",
     "static/media/bookMyBus.1f71072c.png": "/static/media/bookMyBus.1f71072c.png",
     "static/media/css_3.92661138.svg": "/static/media/css_3.92661138.svg",
@@ -42,6 +42,6 @@
     "static/css/2.9feaab34.chunk.css",
     "static/js/2.1ab95a7b.chunk.js",
     "static/css/main.03a5c6e7.chunk.css",
-    "static/js/main.3b4e3fcd.chunk.js"
+    "static/js/main.a2f7f09d.chunk.js"
   ]
 }

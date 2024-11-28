@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.03a5c6e7.chunk.css",
-    "main.js": "/static/js/main.c9081b72.chunk.js",
-    "main.js.map": "/static/js/main.c9081b72.chunk.js.map",
+    "main.js": "/static/js/main.8f95ca9c.chunk.js",
+    "main.js.map": "/static/js/main.8f95ca9c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ba6daf4.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ba6daf4.js.map",
     "static/css/2.9feaab34.chunk.css": "/static/css/2.9feaab34.chunk.css",
-    "static/js/2.300839cc.chunk.js": "/static/js/2.300839cc.chunk.js",
-    "static/js/2.300839cc.chunk.js.map": "/static/js/2.300839cc.chunk.js.map",
+    "static/js/2.1ab95a7b.chunk.js": "/static/js/2.1ab95a7b.chunk.js",
+    "static/js/2.1ab95a7b.chunk.js.map": "/static/js/2.1ab95a7b.chunk.js.map",
     "static/js/3.69cea7f3.chunk.js": "/static/js/3.69cea7f3.chunk.js",
     "static/js/3.69cea7f3.chunk.js.map": "/static/js/3.69cea7f3.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.9feaab34.chunk.css.map": "/static/css/2.9feaab34.chunk.css.map",
     "static/css/main.03a5c6e7.chunk.css.map": "/static/css/main.03a5c6e7.chunk.css.map",
-    "static/js/2.300839cc.chunk.js.LICENSE.txt": "/static/js/2.300839cc.chunk.js.LICENSE.txt",
+    "static/js/2.1ab95a7b.chunk.js.LICENSE.txt": "/static/js/2.1ab95a7b.chunk.js.LICENSE.txt",
     "static/media/MindMesh1.b3409687.jpg": "/static/media/MindMesh1.b3409687.jpg",
     "static/media/MindMesh2.a65c9802.png": "/static/media/MindMesh2.a65c9802.png",
     "static/media/MindMesh3.8a5f1a87.jpg": "/static/media/MindMesh3.8a5f1a87.jpg",
@@ -40,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.5ba6daf4.js",
     "static/css/2.9feaab34.chunk.css",
-    "static/js/2.300839cc.chunk.js",
+    "static/js/2.1ab95a7b.chunk.js",
     "static/css/main.03a5c6e7.chunk.css",
-    "static/js/main.c9081b72.chunk.js"
+    "static/js/main.8f95ca9c.chunk.js"
   ]
 }

@@ -18,8 +18,8 @@ const Github = ()=>{
                 <div className={styles.heading}>
                   Github Contributions
                 </div>
-                <div className={styles.minicontainer}>
-                  <img src={github} alt="Github contributions" className="react-activity-calendar" />
+                <div className={`${styles.minicontainer}`}>
+                  <img  className="react-activity-calendar" src={github} alt="Github contributions"  />
                 </div>
             </div>
     );

@@ -22,7 +22,7 @@ const About = () => {
     <div className={`${styles.container} about section`} id="about" >
       <div>
         <div className={styles.heading}>About</div>
-        <div className={styles.content}>{about}</div>
+        <div className={styles.content} id="user-detail-intro">{about}</div>
         <div className={styles.contact}>
           <div className={styles.contact_items}>
             <HiLocationMarker className={styles.icon} size='1.3em' />

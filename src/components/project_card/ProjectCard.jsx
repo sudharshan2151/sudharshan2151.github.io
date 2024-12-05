@@ -21,7 +21,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} project-card`}>
       {badge ? (
         <>
           <div className={styles.card_badge_bottom}></div>

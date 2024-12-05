@@ -68,12 +68,12 @@ const Skills = () => {
   ];
 
   return (
-    <div className={`${styles.container} nav-link s`} id="skills">
+    <div className={`${styles.container}`} id="skills">
       <div className={styles.heading}>Skills & Interests</div>
       <div className={styles.aligner}>
         {data.map((item, i) => {
           return (
-            <div key={i} className={styles.listItem}>
+            <div key={i} className={`${styles.listItem} skills-card`}>
               <img src={item.image} className="skills-card-img" alt={item.title} />
               <div className={`{styles.title} skills-card-name`}>{item.title}</div>
             </div>

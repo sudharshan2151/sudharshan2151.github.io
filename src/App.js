@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import { About } from "./components/about/About";
 import { Skills } from "./components/skills/Skills";
@@ -13,6 +13,8 @@ import { Github } from "./components/github/Github";
 import { Experience } from "./components/experience/Experience";
 import { Navbar } from "./components/navbar/Navbar";
 import { ContactForm } from "./components/contact_form/ContactForm";
+import Loader from "./components/Loader/Loader";
+
 
 const App = () => {
 
@@ -22,6 +24,13 @@ const App = () => {
   const tools_section = useRef(null);
   const project_section = useRef(null);
   const contact_section = useRef(null);
+  const [load,setLoad] = useState(true);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoad(false);
+    },2000)
+  },[])
 
   const handleSectionScroll = (arg) => {
     let scroll_obj = {
@@ -50,6 +59,8 @@ const App = () => {
       window.scrollTo(scroll_obj);
     }
   };
+
+  if(load)return <Loader color="#186883" />
 
   return (
     <div className="container">

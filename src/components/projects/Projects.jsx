@@ -3,6 +3,7 @@ import styles from "./Projects.module.css";
 import { ProjectCard } from "../project_card/ProjectCard";
 import * as images from "../../assets/project_images";
 
+
 const Projects = () => {
   const {
     bookMybus,
@@ -68,7 +69,7 @@ const Projects = () => {
         "https://github.com/sudharshan2151/Libra_Nexus",
         "https://drive.google.com/file/d/1MBcpgwgEmhQsywGeoMSVpUOL-TATa04l/view?usp=sharing",
       ],
-    },
+    }
     // {
     //     title : ,
     //     image : ,
@@ -79,7 +80,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={`${styles.container} nav-link projects`} id="projects">
+    <div className={`${styles.container}`} id="projects">
       <div className={styles.heading}>Projects</div>
       <div className={styles.aligner}>
         {data?.map((item, i) => {

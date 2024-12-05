@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import user from "../../assets/pp (1).JPG";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import {Fade,Slide,Zoom} from 'react-awesome-reveal';
-import resumeImage from "../../assets/Sudharshan S-Resume_page-0001.jpg";
+import resumeImage from "../../assets/Sudharshan_S_CV.pdf";
 
 const Header = () => {
   const handleGithub = () => {
@@ -21,13 +21,13 @@ const Header = () => {
       const resumePath = resumeImage;
       const downloadLink = document.createElement("a");
       downloadLink.href = resumePath;
-      downloadLink.download = "Sudharshan S-Resume_page-0001.jpg";
+      downloadLink.download = "Sudharshan_S_CV.pdf";
       downloadLink.click();
     
   };
 
   return (
-    <div className={`${styles.container} nav-link home`} id="home">
+    <div className={`${styles.container} `} id="home">
       <div className={styles.content_container}>
         <div className={styles.bg}></div>
         <div className={styles.content}>
@@ -35,7 +35,7 @@ const Header = () => {
             Hi, I am <br />
             <Fade triggerOnce={true} delay={1e3} cascade damping={1e-1} >Sudharshan S</Fade>
           </div>
-          <div className={styles.description} id="user-detail-intro">
+          <div className={styles.description} >
               <Slide triggerOnce={true} duration={2000}> 
                 <Zoom triggerOnce={true} duration={1000}>Programmer | Java Full Stack Developer
                 </Zoom>
@@ -50,9 +50,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={styles.image_container}>
-        <div className={`${styles.image} home-img`}>
-          <img className="home-img" src={user} alt='User Pic' />
+      <div className={`${styles.image_container}`}>
+        <div className={`${styles.image}`}>
+          <img className={`home-img`} src={user} alt='User Pic' />
         </div>
       </div>
     </div>
